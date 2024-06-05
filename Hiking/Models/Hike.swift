@@ -10,7 +10,7 @@ import Foundation
 
 // sigle hike
 
-struct Hike: Identifiable {
+struct Hike: Identifiable, Hashable {
     
     // to confirm Identifiable Hike has to have unic identifier:
     let id = UUID()
