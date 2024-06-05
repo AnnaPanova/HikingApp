@@ -18,9 +18,7 @@ struct ContentView: View {
         ]
         
         List(hikes) { hike in
-            HStack{
-                Text(hike.name)
-            }
+            CellHikeView(hike: hike)
         }
         
     }
@@ -29,5 +27,25 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+//extracted cell for displaying hike
+struct CellHikeView: View {
+    let hike : Hike
+    
+    var body: some View {
+        HStack(alignment: .top){
+            Image(hike.photo)
+                .resizable()
+                .scaledToFit()
+                .clipShape(RoundedRectangle(cornerRadius: 16,style: .continuous))
+                .frame(width: 100)
+            
+            VStack(alignment: .leading) {
+                Text(hike.name)
+                Text("Distance: \((hike.miles).formatted()) miles")
+            }
+        }
     }
 }
