@@ -26,7 +26,7 @@ struct ContentView: View {
             .navigationTitle("Hikes")
             //set up navigation destination. Type of data has to be the same as by value into a link
             .navigationDestination(for: Hike.self) { hike in
-                Text(hike.name)
+               HikeDetailsView(hike: hike)
             }
         }
         
@@ -60,3 +60,5 @@ struct CellHikeView: View {
         }
     }
 }
+
+

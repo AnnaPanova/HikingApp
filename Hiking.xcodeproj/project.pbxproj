@@ -12,6 +12,7 @@
 		43354F872C0F91F500205A99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43354F862C0F91F500205A99 /* Assets.xcassets */; };
 		43354F8A2C0F91F500205A99 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43354F892C0F91F500205A99 /* Preview Assets.xcassets */; };
 		43354F922C0F941700205A99 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43354F912C0F941700205A99 /* Hike.swift */; };
+		43354F982C105F8400205A99 /* HikeDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43354F972C105F8400205A99 /* HikeDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		43354F862C0F91F500205A99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43354F892C0F91F500205A99 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43354F912C0F941700205A99 /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
+		43354F972C105F8400205A99 /* HikeDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HikeDetailsView.swift; path = ../../../../../HikeDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		43354F812C0F91F400205A99 /* Hiking */ = {
 			isa = PBXGroup;
 			children = (
+				43354F952C105D7600205A99 /* Views */,
 				43354F902C0F940A00205A99 /* Models */,
 				43354F822C0F91F400205A99 /* HikingApp.swift */,
 				43354F842C0F91F400205A99 /* ContentView.swift */,
@@ -76,6 +79,14 @@
 				43354F912C0F941700205A99 /* Hike.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		43354F952C105D7600205A99 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43354F972C105F8400205A99 /* HikeDetailsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +161,7 @@
 			files = (
 				43354F922C0F941700205A99 /* Hike.swift in Sources */,
 				43354F852C0F91F400205A99 /* ContentView.swift in Sources */,
+				43354F982C105F8400205A99 /* HikeDetailsView.swift in Sources */,
 				43354F832C0F91F400205A99 /* HikingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
